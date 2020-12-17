@@ -63,7 +63,6 @@ function setupData(rowsToInsert) {
     }
 
     const table = Table.fromJSON({ rows });
-    console.log(table.watchsIdMap);
     thisRun.state.dataTable = table;
 }
 
