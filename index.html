@@ -1,0 +1,30 @@
+<script src="http://code.highcharts.com/highcharts.js" ></script>
+<script src="http://code.highcharts.com/highcharts-more.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://code.highcharts.com/modules/export-data.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js"></script> -->
+<script src="https://rawgithub.com/phpepe/highcharts-regression/master/highcharts-regression.js"></script>
+<script type="module" src="./demo.mjs" referrerpolicy="unsafe-url"></script>
+<div id="container"></div>
+<form action="" onsubmit="return false;" style="display: flex; flex-direction: column;">
+    <label for="rows">Rows to insert</label>
+    <input type="number" name="rows" id="rows" placeholder="10000" value="10000">
+    <br>
+    <label for="iterations">Iterations</label>
+    <input type="number" name="iterations" id="iterations" placeholder="10" value="10">
+    <br>
+    <label for="threshold">Threshold (ms)</label>
+    <input type="number" name="threshold" id="threshold" placeholder="100" value="100">
+    <br>
+    <label for="webworkertoggle">Run in webworker?</label>
+    <input type="checkbox" name="webworkertoggle" id="webworkertoggle">
+</form>
+
+<br>
+<button id="rerun">Run benchmark</button>
+<button id="startramp">Run ramp test</button>
+</div>
+
+<div>
+    <div id="chart"></div>
+</div>
